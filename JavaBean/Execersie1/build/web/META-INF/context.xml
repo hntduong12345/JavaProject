@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Execersie1">
+    <Resource name="DuongHNTSP23WS01" auth="Container" type="javax.sql.DataSource"
+    username="sa" password="12345"
+    driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    url="jdbc:sqlserver://localhost:1433;databaseName=DuongHNTSP23WS01"/>
+</Context>

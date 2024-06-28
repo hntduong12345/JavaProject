@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Login Page</h1>
+
+        <form action="MainController" method="POST">
+            <table border="0">
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" name="txtUsername" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="txtPassword" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Login" name="btAction">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>            
+        </form>
+
+        <a href="bookStore.html">Go shopping to buy books</a><br/>
+        <a href="createNewAccount.html">Create new account</a>
+    </body>
+</html>

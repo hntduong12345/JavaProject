@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <description>Number of access</description>
+        <param-name>initial</param-name>
+        <param-value>0</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>InitCounter</servlet-name>
+        <servlet-class>controller.InitCounter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MiddleController</servlet-name>
+        <servlet-class>controller.MiddleController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndController</servlet-name>
+        <servlet-class>controller.EndController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitCounter</servlet-name>
+        <url-pattern>/InitCounter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MiddleController</servlet-name>
+        <url-pattern>/MiddleController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndController</servlet-name>
+        <url-pattern>/EndController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>requestDispatcher.html</welcome-file>
+    </welcome-file-list>
+</web-app>
